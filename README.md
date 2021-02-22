@@ -1,2 +1,2 @@
-# calculator
+# Simple Calculator
 Qalyn mal calculator
