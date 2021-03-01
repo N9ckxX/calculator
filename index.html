@@ -2,14 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qalyn mal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
-<h1 style="text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Qalyn Mal</h1>
-<body style="background-color: rgb(161, 158, 158);">
-<h4 style="margin: 0%;  font-family: Arial, Helvetica, sans-serif; font-size: 17px;">Choose bride's degree:</h4>
 <br>
-<div class="graduate">
-<select id="Graduate" name="Graduate">
+<body>
+    <div class="gradient-border" id="box">
+    <div id="calc">
+        <h1 style="font-family: 'Press Start 2P', cursive;;; text-align: center;color:black;"><b>Qalyn Mal</b></h1>
+        <h3 style="font-family: 'Press Start 2P', cursive;;; text-align: center;color:black;"><b>Calculator</b></h3>
+        <hr style="color: black;">
+<h4 style="font-size: 20px;">Choose bride's degree:</h4>
+<div class="edu">
+<select id="Edu" name="Edu">
     <option value="Select value">Select variable</option>
     <option value="1.5">Undergraduate degree</option>
     <option value="1.2">College degree</option>
@@ -17,53 +26,57 @@
     <option value="0.9">Middle school degree</option>
 </select>
 </div>
-<hr>
-<h4 style="font-family: Arial, Helvetica, sans-serif; font-size: 17px;">Choose bride's family networth:</h4>
-<div class="networth">
-<select id="NetWorth" name="Family net worth">
+<h4 style="font-size: 20px;">Choose bride's family networth:</h4>
+<div class="familynet">
+<select id="familyNet" name="Family net worth">
     <option value="Select value">Select variable</option>
     <option value="2">More than 100,000$</option>
     <option value="1.5">Between 50,000$ and 100,000$</option>
     <option value="1.2">Less than 50,000$</option>
 </select>
 </div>
-<hr>
-<h4 style="font-family: Arial, Helvetica, sans-serif; font-size: 17px;">Choose bride's skills:</h4>
-<div class="skill">
-    <input id="skill1" name="skill1" type="checkbox" value="100">
-    <label for="skill1"> Playing on dombra</label><br>
-    <input id="skill2" name="skill2" type="checkbox" value="200">
-    <label for="skill2"> Good cook</label><br>
-    <input id="skill3" name="skill3" type="checkbox" value="150">
-    <label for="skill3"> Easygoing character</label><br>
-    <input id="skill4" name="skill4" type="checkbox" value="100">
-    <label for="skill4"> Sings well</label>
+<h4 style="font-size: 20px;">Choose bride's masterys:</h4>
+<div class="mastery">
+    <input id="mastery1" name="mastery1" type="checkbox" value="100">
+    <label for="mastery1"> Playing on dombra</label><br>
+    <input id="mastery2" name="mastery2" type="checkbox" value="200">
+    <label for="mastery2"> Good cook</label><br>
+    <input id="mastery3" name="mastery3" type="checkbox" value="150">
+    <label for="mastery3"> Easygoing character</label><br>
+    <input id="mastery4" name="mastery4" type="checkbox" value="100">
+    <label for="mastery4"> Sings well</label>
 </div>
-<hr>
-<h4 style="font-family: Arial, Helvetica, sans-serif; font-size: 17px;">Choose bride's age:</h4>
+<h4 style="font-size: 20px;">Choose bride's age:</h4>
 <div class="age">
-    <input id="between18" name="age" type="radio" value="1.5">
-    <label for="between18"> Between 18-23</label><br>
-    <input id="between24" name="age" type="radio" value="1.2">
-    <label for="between24"> Between 24-27</label><br>
-    <input id="28+" name="age" type="radio" value="0.95">
-    <label for="28+"> 28+</label>
+    <input id="x18years" name="age" type="radio" value="1.5">
+    <label for="x18years"> Between 18-23</label><br>
+    <input id="x24years" name="age" type="radio" value="1.2">
+    <label for="x24years"> Between 24-27</label><br>
+    <input id="x28" name="age" type="radio" value="0.95">
+    <label for="x28"> 28+</label>
 </div>
-<hr>
-<h4 style="font-family: Arial, Helvetica, sans-serif; font-size: 17px;">Choose bride's reputation:</h4>
+<h4 style="font-size: 20px;">Choose bride's reputation:</h4>
 <div class="gossips">
-    <input id="option1" name="reputation1" type="checkbox" value="0.85">
-    <label for="option1"> Gossips about his/her parent's attitude</label><br>
-    <input id="option2" name="reputation2" type="checkbox" value="0.9">
-    <label for="option2"> Gossips about his/her character</label><br>
-    <input id="option3" name="reputation3" type="checkbox" value="-200">
-    <label for="option3"> General gossips around his/her person</label>
+    <input id="var1" name="rep1" type="checkbox" value="0.85">
+    <label for="var1"> Gossips about his/her parent's attitude</label><br>
+    <input id="var2" name="rep2" type="checkbox" value="0.9">
+    <label for="var2"> Gossips about his/her character</label><br>
+    <input id="var3" name="rep3" type="checkbox" value="-200">
+    <label for="var3"> General gossips around his/her person</label>
 </div>
-<hr>
+<br>
+<div class="notes">
+    <label for="message"><b>Love Letter:</b></label><br>
+    <br>
+    <textarea id="message" name="message" rows="10" cols="2" placeholder="Write something about love" style="margin: 0px; width: 334px; height: 69px;"></textarea>
+</div>
+<br>
 <br>
 <div class="button">
-<button id="calculate">Calculate</button>
+<button onClick = "clickButton();" id="bn29">Calculate</button>
+</div>
 </div>
 <script src="calculator.js"></script>
+</div>
 </body>
 </html>
